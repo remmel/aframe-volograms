@@ -8,9 +8,10 @@ I didn't use a lot aframe; do not hesitate to create an issue to suggest another
 `<a-entity vologram src="https://www.example.com/foo/bar/1670754904327_ld/texture_1024_h264.mp4"></a-entity>`
 
 See the [index.html](dist/index.html) for a complete example.  
+[Live demo](https://remmel.github.io/aframe-volograms/dist/index.html)
 
 # TODO
-Probably better expose the HTMLVideoElement properties, although you can already access them (see [index.html](dist/index.html))
+Probably better expose the `HTMLVideoElement` properties, although you can already access them (see [index.html](dist/index.html))
 
 # For older myself
 
