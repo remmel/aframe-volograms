@@ -10,7 +10,6 @@ module.exports = {
   output: {
     filename: 'aframe-volograms.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
   },
   externals: { three: 'THREE'} //this is req to avoid loading twice THREE
 };

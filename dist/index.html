@@ -1,0 +1,39 @@
+
+<html>
+<head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="aframe-volograms.js"></script>
+</head>
+<body>
+<a-scene cursor="rayOrigin: mouse" raycaster="objects: .clickable">
+    <a-cylinder position="0 0.9 -4" radius="0.5" height="1.8" color="#FFC65D"></a-cylinder>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" id="plane"></a-plane>
+    <a-sky color="#ECECEC"></a-sky>
+    <a-entity vologram src="https://www.metalograms.com/ftp/vv/volograms/1670754904327_ld/texture_1024_h264.mp4" position="0 0 -3" rotation="0 0 0" id="volo"></a-entity>
+    <a-text value="Loading\n..." rotation="-90 0 0" position="-1 0.1 -3" align="center" id="loading"></a-text>
+    <a-text value="Unmute" rotation="-90 0 0" position="1 0.1 -3" align="center" geometry="primitive:plane" id="sound" class="clickable"></a-text>
+</a-scene>
+
+<script>
+    // access to HTMLVideoElement, eg muted :
+    const elSound = document.getElementById('sound')
+    elSound.onclick = e => {
+        const elVideo = document.getElementById('volo').object3D.children[0].elVideo
+        console.log(elVideo.constructor.name)
+        if(elVideo.muted) {
+            elVideo.muted = false
+            elSound.setAttribute('value', 'Mute');
+        } else {
+            elVideo.muted = true
+            elSound.setAttribute('value', 'Unmute');
+        }
+    }
+
+    // Display loading info
+    const elLoading = document.getElementById('loading')
+    document.getElementById('volo').addEventListener('progress', e => {
+        elLoading.setAttribute('value', "Loading\n " + Math.round(e.detail.value*100) + "%")
+    });
+</script>
+</body>
+</html>
