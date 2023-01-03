@@ -1,0 +1,40 @@
+{
+  "name": "aframe-volograms",
+  "version": "0.0.1",
+  "description": "Aframe component to display volograms in web browser",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remmel/aframe-volograms.git"
+  },
+  "keywords": [
+    "aframe",
+    "volograms",
+    "threejs",
+    "webvr",
+    "webxr",
+    "volumetric",
+    "hologram",
+    "metaverse"
+  ],
+  "author": "Remy Mellet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/remmel/aframe-volograms/issues"
+  },
+  "homepage": "https://github.com/remmel/aframe-volograms#readme",
+  "devDependencies": {
+    "aframe": "^1.4.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "path-browserify": "^1.0.1",
+    "volograms-js": "^0.1.17"
+  }
+}
