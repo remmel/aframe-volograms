@@ -1,5 +1,5 @@
 # aframe-volograms
-Aframe component to display volograms in web browser.  
+Aframe component to display volograms in web browser. Use [volograms-js](https://www.npmjs.com/package/volograms-js).  
 I didn't use a lot aframe; do not hesitate to create an issue to suggest another way to use it.  
 
 
