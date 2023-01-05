@@ -13,10 +13,8 @@ See the [index.html](dist/index.html) for a complete example.
 # TODO
 Probably better expose the `HTMLVideoElement` properties, although you can already access them (see [index.html](dist/index.html))
 
-# For older myself
-
-`npm install`  
-`npm run start`
-
-## To build
-`npm run build` (THREE is not included as in aframe; volograms-js is included)
+## How to contribute
+- clone repo : `git clone git@github.com:remmel/aframe-volograms.git`
+- run local webserver : `npm run start`
+- build js : `npm run build` (THREE is not included as in aframe; volograms-js is included)
+- publish new version : `npm version 0.1.1` `npm publish`

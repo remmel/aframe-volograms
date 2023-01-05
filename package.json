@@ -34,7 +34,6 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "path-browserify": "^1.0.1",
     "volograms-js": "^0.1.17"
   }
 }
